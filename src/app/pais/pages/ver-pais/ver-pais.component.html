@@ -1,6 +1,7 @@
 <div *ngIf="!pais; else divPais" class="alert alert-info">
     Espere por favor...
 </div>
+
 <ng-template #divPais>
     <div *ngFor="let item of pais">
         <div class="row">
@@ -37,18 +38,18 @@
             </div>
 
         </div>
-        
-        
+
+
 
         <hr>
         <h2>Traducciones</h2>
         <div class="row">
             <div class="col" >
-                <span class="badge bg-primary ml-1">Official: {{ item.translations['ara'].common }}</span>
-                <span class="badge bg-primary ml-1">Official: {{ item.translations['kor'].common }}</span>
-                <span class="badge bg-primary ml-1">Official: {{ item.translations['zho'].common }}</span>
-                <span class="badge bg-primary ml-1">Official: {{ item.translations['tur'].common }}</span>
-                <span class="badge bg-primary ml-1">Official: {{ item.translations['srp'].common }}</span>
+                KOREA: <span class="badge bg-primary ml-1">{{item.translations['kor'].common }}</span>
+                ZHOYEN: <span class="badge bg-primary ml-1">{{item.translations['zho'].common }}</span>
+                ARABIA: <span class="badge bg-primary ml-1">{{item.translations['ara'].common }}</span>
+                TURCO: <span class="badge bg-primary ml-1">{{item.translations['tur'].common }}</span>
+                SRPP: <span class="badge bg-primary ml-1">{{item.translations['srp'].common }}</span>
             </div>
         </div>
 

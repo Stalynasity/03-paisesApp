@@ -28,7 +28,7 @@ export class PaisInputComponent implements OnInit {
     this.debouncer.next(this.termino);
 
   }
-  
+
   buscar(){
     this.onEnter.emit(this.termino);
 

@@ -22,7 +22,6 @@ import { country } from '../../interface/pais.interface';
     // Object=['ara'];
 
   ngOnInit(): void {
-
     //Busqueda de la id de la url
     this.activatedRoute.params
     .pipe(
@@ -32,8 +31,6 @@ import { country } from '../../interface/pais.interface';
       {
         this.pais = pais
       });
-
-    
     //2do metodo
     // this.activatedRoute.params
     //   .subscribe( ({id}) => {
